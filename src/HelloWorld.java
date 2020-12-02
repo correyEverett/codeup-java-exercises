@@ -11,7 +11,9 @@ public class HelloWorld {
         String myString = "Spring and Autumn are the best seasons!";
         System.out.println(myString);
 
-//        myString = 'A';
+//        myString = 'A'; compiler error: incompatible types: char cannot be converted to java.lang.String
+
+//        myString = 3.14159; compiler error: incompatible types: double cannot be converted to java.lang.String
 
 
     }
