@@ -37,6 +37,11 @@ public class HelloWorld {
 //        System.out.println(++x);
 //        System.out.println(x);
 
+//        String class = "What happens with a variable named 'class'?";
+//        not a statement
+//        ';' expected
+//        <identifier> expected
+//        reached end of file while parsing
     }
 
 }
