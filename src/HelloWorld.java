@@ -11,6 +11,8 @@ public class HelloWorld {
         String myString = "Spring and Autumn are the best seasons!";
         System.out.println(myString);
 
+//        myString = 'A';
+
 
     }
 
