@@ -18,6 +18,11 @@ public class HelloWorld {
         long myNumber;
 //        System.out.println(myNumber); compiler error: variable myNumber might not have been initialized
 
+//        myNumber = 3.14; compiler error: incompatible types: possible lossy conversion from double to long
+
+        myNumber = 123L;
+
+        myNumber = 123;
 
     }
 
