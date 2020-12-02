@@ -8,6 +8,9 @@ public class HelloWorld {
         int myFavoriteNumber = 7;
         System.out.println(myFavoriteNumber);
 
+        String myString = "Spring and Autumn are the best seasons!";
+        System.out.println(myString);
+
 
     }
 
