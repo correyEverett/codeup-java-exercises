@@ -15,6 +15,9 @@ public class HelloWorld {
 
 //        myString = 3.14159; compiler error: incompatible types: double cannot be converted to java.lang.String
 
+        long myNumber;
+//        System.out.println(myNumber); compiler error: variable myNumber might not have been initialized
+
 
     }
 
