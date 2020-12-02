@@ -58,7 +58,7 @@ public class SyntaxLecture {
 //            byte age = -32;
 //        System.out.println(age);
 //            short minimumAnnualSalary = 15080;
-//            int distanceToSaturn = 1200000000;
+//            int distanceToSaturnInKm = 1200000000;
 //            long numberOfHumanCells = 3000000000L; // L needed for compiler
 //            System.out.println(numberOfHumanCells);
 //            float lengthOfBacteriaInInches = 0.00004F; // F needed for compiler
