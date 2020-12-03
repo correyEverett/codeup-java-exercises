@@ -76,15 +76,19 @@ public class HelloWorld {
 ////        DISPLAY USER INPUT
 //        System.out.println(wholeNumber);
 
-        System.out.println("Enter three words of your choosing");
-        String word1 = userInput.next();
-        String word2 = userInput.next();
-        String word3 = userInput.next();
+//        System.out.println("Enter three words of your choosing");
+//        String word1 = userInput.next();
+//        String word2 = userInput.next();
+//        String word3 = userInput.next();
+//
+//        System.out.println(word1);
+//        System.out.println(word2);
+//        System.out.println(word3);
 
-        System.out.println(word1);
-        System.out.println(word2);
-        System.out.println(word3);
+        System.out.println("Enter a sentence");
+        String usersSentence = userInput.nextLine();
 
+        System.out.println(usersSentence);
 
 
 
