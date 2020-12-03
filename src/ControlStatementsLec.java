@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlStatementsLec {
     public static void main(String[] args) {
         // ==================== Boolean Expressions
@@ -23,7 +25,7 @@ public class ControlStatementsLec {
         // x will only increment in second condition if first condition is true using &&
 //                int x = 2;
 //                int y = 3;
-
+//
 //                if (true && ++x == y) {
 //                    System.out.println("Equal");
 //                } else {
@@ -32,21 +34,21 @@ public class ControlStatementsLec {
 //                System.out.println(x);
 
 
-        // ==================== Slide 7
+        // ==================== Strings
 
         // DO NOT COMPARE STRINGS WITH == !!!!
 
-//                Scanner sc = new Scanner(System.in);
-//                String cat1 = sc.nextLine();
-//                String cat2 = "cat";
-//                System.out.println(cat1);
-//                System.out.println(cat2);
-//                System.out.println(cat1 == cat2);
+                Scanner sc = new Scanner(System.in);
+                String cat1 = sc.nextLine();
+                String cat2 = "cat";
+                System.out.println(cat1);
+                System.out.println(cat2);
+                System.out.println(cat1 == cat2);
 
         // do use equals(),
 
-//    boolean stringValuesAreEqual = "Test".equals("Tes");
-//    System.out.printf("The result is: %s", stringValuesAreEqual);
+    boolean stringValuesAreEqual = "Test".equals("Test");
+    System.out.printf("The result is: %s", stringValuesAreEqual);
 
 
         // or use equalsIgnoreCase()
