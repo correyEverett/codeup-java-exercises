@@ -1,10 +1,21 @@
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
-//        REFACTOR PREVIOUS LOOPS TO FOR LOOPS
 
-        for (int i = 5; i <= 15; i++) {
+        for (int i = 1; i <= 100; i++) {
+
+        boolean divisibleBy3 = i % 3 == 0;
+        boolean divisibleBy5 = i % 5 == 0;
+
+            if(divisibleBy3 && divisibleBy5) {
+            System.out.println("FizzBuzz");
+            } else if (divisibleBy5) {
+                System.out.println("Buzz");
+            } else if (divisibleBy3) {
+                System.out.println("Fizz");
+            } else {
                 System.out.println(i);
+            }
         }
     }
 
