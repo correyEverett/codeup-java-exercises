@@ -2,13 +2,12 @@ public class ControlFlowExercises {
 
     public static void main(String[] args) {
 //        DO WHILE LOOP
-        int i = 100;
-//        boolean isEven = i % 2 == 0;
+        long i = 2;
 
         do {
-                System.out.printf("I is equal to %d%n", i);
-                i -= 5;
-        }while (i >= -10);
+                System.out.println(i);
+                i *= i;
+        }while (i < 1000000);
     }
 
 }
