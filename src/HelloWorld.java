@@ -1,15 +1,17 @@
+import java.util.Scanner;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello, World!");
-        System.out.println("Hello, Jupiter!");
-
-        int myFavoriteNumber = 7;
-        System.out.println(myFavoriteNumber);
-
-        String myString = "Spring and Autumn are the best seasons!";
-        System.out.println(myString);
+//        System.out.println("Hello, World!");
+//        System.out.println("Hello, Jupiter!");
+//
+//        int myFavoriteNumber = 7;
+//        System.out.println(myFavoriteNumber);
+//
+//        String myString = "Spring and Autumn are the best seasons!";
+//        System.out.println(myString);
 
 //        myString = 'A'; compiler error: incompatible types: char cannot be converted to java.lang.String
 
@@ -63,8 +65,16 @@ public class HelloWorld {
 //        System.out.println(x);
 //        System.out.println(y);
 
-        double pi = 3.14159;
-        System.out.printf("The value of pi is approximately %.2f", pi);
+//        double pi = 3.14159;
+//        System.out.printf("The value of pi is approximately %.2f%n", pi);
+
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter a whole number");
+        int wholeNumber = userInput.nextInt();
+        System.out.println(wholeNumber);
+
+
+
 
 
 
