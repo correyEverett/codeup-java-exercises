@@ -85,12 +85,22 @@ public class HelloWorld {
 //        System.out.println(word2);
 //        System.out.println(word3);
 
-        System.out.println("Enter a sentence");
-        String usersSentence = userInput.nextLine();
+//        System.out.println("Enter a sentence");
+//        String usersSentence = userInput.nextLine();
+//
+//        System.out.println(usersSentence);
 
-        System.out.println(usersSentence);
+        System.out.println("Please provide the length and width of the codeup classroom.");
+        String userInputLength = userInput.nextLine();
+        String userInputWidth = userInput.nextLine();
 
+        int length = Integer.parseInt(userInputLength);
+        int width = Integer.parseInt(userInputWidth);
+        int area = length * width;
+        int perimeter = (length + width) * 2;
 
+        System.out.printf("The area of the codeup room is %d%n", area);
+        System.out.printf("The perimeter of the codeup room is %d%n", perimeter);
 
 
 
