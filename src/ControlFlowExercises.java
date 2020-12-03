@@ -1,22 +1,18 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 100; i++) {
+        Scanner usersNumber = new Scanner(System.in);
 
-        boolean divisibleBy3 = i % 3 == 0;
-        boolean divisibleBy5 = i % 5 == 0;
+        System.out.println("Please enter an Integer.");
+        System.out.println();
+        System.out.println("Here is your table.");
+        System.out.println();
 
-            if(divisibleBy3 && divisibleBy5) {
-            System.out.println("FizzBuzz");
-            } else if (divisibleBy5) {
-                System.out.println("Buzz");
-            } else if (divisibleBy3) {
-                System.out.println("Fizz");
-            } else {
-                System.out.println(i);
-            }
-        }
+
+
     }
 
 }
