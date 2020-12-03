@@ -69,10 +69,21 @@ public class HelloWorld {
 //        System.out.printf("The value of pi is approximately %.2f%n", pi);
 
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Enter a whole number");
-        int wholeNumber = userInput.nextInt();
-        System.out.println(wholeNumber);
+////        PROMPT USER TO ENTER A INTEGER
+//        System.out.println("Enter a whole number");
+////        STORE THE VALUE ENTERED BY USER IN A INT VARIABLE
+//        int wholeNumber = userInput.nextInt();
+////        DISPLAY USER INPUT
+//        System.out.println(wholeNumber);
 
+        System.out.println("Enter three words of your choosing");
+        String word1 = userInput.next();
+        String word2 = userInput.next();
+        String word3 = userInput.next();
+
+        System.out.println(word1);
+        System.out.println(word2);
+        System.out.println(word3);
 
 
 
