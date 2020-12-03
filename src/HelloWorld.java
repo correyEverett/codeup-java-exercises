@@ -56,12 +56,18 @@ public class HelloWorld {
 //        y *= x;
 //        System.out.println(y);
 
-        int x = 10;
-        int y = 2;
-        x /= y;
-        y -= x;
-        System.out.println(x);
-        System.out.println(y);
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
+//        System.out.println(x);
+//        System.out.println(y);
+
+        double pi = 3.14159;
+        System.out.printf("The value of pi is approximately %.2f", pi);
+
+
+
 
 
     }
