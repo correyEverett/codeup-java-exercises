@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Bob {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Talk to Bob");
+        System.out.println("What would you like to say to Bob?");
         String talkingToBob = scan.nextLine();
         boolean userContinue = true;
 
@@ -18,9 +19,8 @@ public class Bob {
                 System.out.println(question);
             } else if (talkingToBob.endsWith("!")) {
                 System.out.println(exclamation);
-            } else if (talkingToBob.endsWith("")) {
+            } else if (talkingToBob.endsWith(" ")) {
                 System.out.println(none);
-                scan.nextLine();
             } else {
                 System.out.println(other);
             }
@@ -31,7 +31,6 @@ public class Bob {
                 userContinue = false;
             }
         }while(userContinue);
-
 
     }
 }
