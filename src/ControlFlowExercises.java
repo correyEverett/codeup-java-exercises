@@ -4,14 +4,33 @@ public class ControlFlowExercises {
 
     public static void main(String[] args) {
 
-        Scanner usersNumber = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        System.out.println("Please enter an Integer.");
-        System.out.println();
-        System.out.println("Here is your table.");
-        System.out.println();
+        boolean userContinues = true;
 
+        do {
+            System.out.println("What number would you like to go up to?");
+            int userNumber = scan.nextInt();
+            System.out.println();
+            System.out.println("Here is your table.");
+            System.out.println();
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
 
+            for (int i = 1; i <= userNumber; i++) {
+                System.out.format("%-7d", i);
+                System.out.print("|");
+                System.out.format(" %-8d", i * i);
+                System.out.print("|");
+                System.out.format(" %-9d", i * i * i);
+                System.out.println();
+            }
+            System.out.println("Would you like to enter another number?");
+            String userResponse = scan.next();
+            if (!userResponse.equalsIgnoreCase("y")) {
+                userContinues = false;
+            }
+        }while(userContinues);
 
     }
 
