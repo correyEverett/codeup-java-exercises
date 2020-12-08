@@ -9,8 +9,8 @@ public class MethodsExercises {
 //        System.out.println(Multiplication(10, 5));
 //        System.out.println(Division(10, 5));
 //        System.out.println(Modulus(10, 5));
-        getInteger(1, 10);
-//        System.out.println("This is the result of Calculate Factorial: " + calculateFactorial());
+//        getInteger(1, 10);
+        System.out.println("This is the result of Calculate Factorial: " + calculateFactorial());
     }
 
     //ARITHMETIC METHODS
@@ -67,22 +67,22 @@ public class MethodsExercises {
 //
 //
 //    //CALCULATE THE FACTORIAL OF A NUMBER
-//    public static long calculateFactorial() {
-//
-//        System.out.println("Enter a number between 1 and 10:");
-//        int userNumber = getInteger(1, 10);
-//        long fact = 1;
-//        boolean doOver = true;
-//
-//        do {
-//            for (int i = 1; i <= userNumber; i++) {
-//                fact = fact * i;
-//                System.out.printf("%d! = %d\n", i, fact);
-//            }
-//        }while(false);
-//
-//        return fact;
-//    }
+    public static long calculateFactorial() {
+
+        System.out.println("Enter a number between 1 and 10:");
+        int userNumber = getInteger(1, 10);
+        long fact = 1;
+        boolean doOver = true;
+
+        do {
+            for (int i = 1; i <= userNumber; i++) {
+                fact = fact * i;
+                System.out.printf("%d! = %d\n", i, fact);
+            }
+        }while(false);
+
+        return fact;
+    }
 
 
 
