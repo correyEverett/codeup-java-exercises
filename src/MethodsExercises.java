@@ -9,8 +9,8 @@ public class MethodsExercises {
 //        System.out.println(Multiplication(10, 5));
 //        System.out.println(Division(10, 5));
 //        System.out.println(Modulus(10, 5));
-//        getInteger(1, 10);
-        System.out.println("This is the result of Calculate Factorial: " + calculateFactorial());
+        getInteger(1, 10);
+//        System.out.println("This is the result of Calculate Factorial: " + calculateFactorial());
     }
 
     //ARITHMETIC METHODS
@@ -22,12 +22,12 @@ public class MethodsExercises {
 //        return num1 - num2;
 //    }
 //
-//    public static int Multiplication(int num1, int num2) {
-//        if (num2 <= 0) {
-//            return 0;
-//        }
-//        return num1 + Multiplication(num1, num2 - 1);
-//    }
+    public static int Multiplication(int num1, int num2) {
+        if (num2 <= 0) {
+            return 0;
+        }
+        return num1 + Multiplication(num1, num2 - 1);
+    }
 //
 //    public static int Division(int num1, int num2) {
 //        return num1 / num2;
@@ -46,39 +46,43 @@ public class MethodsExercises {
 //        userNumber = scan.nextInt();
 //        }while(userNumber < min || userNumber > max);
 //
-//        System.out.println(userNumber);
 //        return userNumber;
 //    }
 
     //INPUT RANGE VALIDATION USING RECURSION
     public static int getInteger(int min, int max) {
         Scanner scan = new Scanner(System.in);
-        System.out.printf("Enter a number between %d and %d:\n", min, max);
-        int userNumber;
-        userNumber = scan.nextInt();
-
-        if(userNumber < min || userNumber > max) {
+        if (!scan.hasNextInt()) {
+            System.out.println("Not a number!");
             return getInteger(min, max);
         }
-        System.out.println(userNumber);
-        return userNumber;
-
-    }
-
-
-    //CALCULATE THE FACTORIAL OF A NUMBER
-    public static int calculateFactorial() {
-
-        System.out.println("Enter a number between 1 and 10:");
-        int userNumber = getInteger(1, 10);
-        int fact = 1;
-
-        for (int i = 1; i <= userNumber; i++) {
-            fact = fact * i;
-            System.out.printf("%d! = %d\n", i, fact);
+        int userInput = scan.nextInt();
+        if (userInput >= min && userInput <= max) {
+            return userInput;
+        } else {
+            System.out.println("Number not in range!");
+            return getInteger(min, max);
         }
-        return fact;
     }
+//
+//
+//    //CALCULATE THE FACTORIAL OF A NUMBER
+//    public static long calculateFactorial() {
+//
+//        System.out.println("Enter a number between 1 and 10:");
+//        int userNumber = getInteger(1, 10);
+//        long fact = 1;
+//        boolean doOver = true;
+//
+//        do {
+//            for (int i = 1; i <= userNumber; i++) {
+//                fact = fact * i;
+//                System.out.printf("%d! = %d\n", i, fact);
+//            }
+//        }while(false);
+//
+//        return fact;
+//    }
 
 
 
