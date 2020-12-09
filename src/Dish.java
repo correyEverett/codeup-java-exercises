@@ -5,7 +5,7 @@ public class Dish {
     public boolean wouldRecommend;
 
     public void printSummary () {
-        System.out.printf("Cost: %d\nName: %s\nRecommended: %b\n", costInCents, nameOfDish, wouldRecommend);
+        System.out.printf("Cost: %.2f\nName: %s\nRecommended: %b\n", costInCents / 100., nameOfDish, wouldRecommend);
     }
 
 }
