@@ -3,11 +3,11 @@ public class DishTools {
     public static int  AVERAGE_COST_OF_DISH_IN_CENTS = 1300;
 
     public static void shoutDishName (Dish dish) {
-        System.out.println(dish.nameOfDish.toUpperCase());
+        System.out.println(dish.getNameOfDish().toUpperCase());
     }
 
     public static void analyzeDishCost (Dish dish) {
-        if (dish.costInCents > AVERAGE_COST_OF_DISH_IN_CENTS) {
+        if (dish.getCostInCents() > AVERAGE_COST_OF_DISH_IN_CENTS) {
             System.out.println("More expensive than average!");
         } else {
             System.out.println("Less expensive than average!");
@@ -15,7 +15,7 @@ public class DishTools {
     }
 
     public static void flipRecommendation (Dish dish) {
-        System.out.println(!dish.wouldRecommend);
+        System.out.println(!dish.isWouldRecommend());
     }
 
 
