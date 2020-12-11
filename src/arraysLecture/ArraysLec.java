@@ -1,4 +1,6 @@
-package arraysLecture;
+package arraysLecture;//package arraysLecture;
+
+import java.util.Arrays;
 
 public class ArraysLec {
 
@@ -15,11 +17,11 @@ public class ArraysLec {
         // Int Example
         //Declare an int array variable and assign an int array with the length of 3 to the array variable nums
 
-//        int[] nums = new int[3];
-//
-//        nums[0] = 1; //Assign each index to an int variable
-//        nums[1] = 10;
-//        nums [2] = 12;
+        int[] nums = new int[3];
+
+        nums[0] = 1; //Assign each index to an int variable
+        nums[1] = 10;
+        nums [2] = 12;
 //
 //        System.out.println(nums); //Type@HashcodeOfObject
 //
@@ -124,14 +126,18 @@ public class ArraysLec {
 
         // Example1:  Array.fill()
 
-//        String[] testArray = new String[4];
-//
-//        Arrays.fill(testArray, "dogs");
-//        for (String element : testArray) {
-//            System.out.println(element);
-//        }
+        String[] testArray = new String[4];
 
+        Arrays.fill(testArray, "dogs");
+        for (String element : testArray) {
+            System.out.println(element);
+        }
 
+        int[] numbers = new int[5];
+        Arrays.fill(numbers, 2);
+        for(int number : numbers) {
+        System.out.println(number);
+        }
 
 
 
@@ -139,12 +145,12 @@ public class ArraysLec {
 
 
         // ***Example1: BONUS ***
-//        int[] numArray = {1,1,1,1,1,1,1,1,1,1};
-//
-//        Arrays.fill(numArray, 0, 4, 5);
-//        for (int element : numArray) {
-//            System.out.println(element);
-//        }
+        int[] numArray = {1,1,1,1,1,1,1,1,1,1};
+        //Replaces the value of indices 0-4 with the value of 5
+        Arrays.fill(numArray, 0, 4, 5);
+        for (int element : numArray) {
+            System.out.println(element);
+        }
 
 
 
@@ -157,9 +163,9 @@ public class ArraysLec {
         // Example 2: Arrays.equals(array1, array2)
         // Returns true if two array elements are equal and in the same order
 
-//        String[] words = {"Mushroom", "Mushroom"};
-//        String[] words2 = {"Mushroom", "mushroom"};
-//        System.out.println(Arrays.equals(words, words2));
+        String[] words = {"Mushroom", "Mushroom"};
+        String[] words2 = {"Mushroom", "mushroom"};
+        System.out.println(Arrays.equals(words, words2));
 
 
 
@@ -172,11 +178,11 @@ public class ArraysLec {
         // Example 3: Arrays.copyOf()
         // Returns a copy array of a given array of a given length
 
-//        String[] badgerArray = new String[4];
-//        Arrays.fill(badgerArray, "Badgers");
-//
-//        String[] twoBadgers = Arrays.copyOf(badgerArray, 2);
-//        System.out.println(Arrays.toString(twoBadgers));
+        String[] badgerArray = new String[4];
+        Arrays.fill(badgerArray, "Badgers");
+
+        String[] twoBadgers = Arrays.copyOf(badgerArray, 2);
+        System.out.println(Arrays.toString(twoBadgers));
 
 
 
