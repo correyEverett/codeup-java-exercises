@@ -15,9 +15,9 @@ public class ArraysExercises {
             System.out.println(individual.getName());
         }
 
-        public static Person[] addPerson(Person[], newPerson) {
-            newArray = Arrays.copyOf(Person, )
-            return newArray;
+        public static Person[] addPerson(Person[] newPerson, Person person) {
+
+            return;
         }
 
 
