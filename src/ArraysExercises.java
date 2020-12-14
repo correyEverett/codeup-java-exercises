@@ -2,20 +2,28 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
+
     public static void main(String[] args) {
+
 //        int[] numbers = {1, 2, 3, 4, 5};
-//        System.out.println(numbers);
+        Person[] newPerson = new Person[3];
+        newPerson[0] = new Person("Correy");
+        newPerson[1] = new Person("Jon");
+        newPerson[2] = new Person("Doe");
 
-        Person[] people = new Person[3];
-        people[0] = new Person("Correy");
-        people[1] = new Person("Jon");
-        people[2] = new Person("Doe");
-
-        for (Person individual : people) {
+        for (Person individual : newPerson) {
             System.out.println(individual.getName());
         }
 
+        public static Person[] addPerson(Person[], newPerson) {
+            newArray = Arrays.copyOf(Person, )
+            return newArray;
+        }
+
+
     }
+
+
 
 
 
