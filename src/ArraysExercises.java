@@ -15,10 +15,10 @@ public class ArraysExercises {
             System.out.println(individual.getName());
         }
 
-        public static Person[] addPerson(Person[] newPerson, Person person) {
-
-            return;
-        }
+//        public static Person[] addPerson(Person[] newPerson, Person person) {
+//
+//            return;
+//        }
 
 
     }
