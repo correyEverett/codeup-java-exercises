@@ -10,6 +10,10 @@ public class Square extends Rectangle {
        return length * length;
     }
 
+    public int getPerimeter() {
+        return length * 4;
+    }
+
 
 
 
