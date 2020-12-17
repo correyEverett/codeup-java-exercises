@@ -7,6 +7,16 @@ public class Student {
     private String name;
     private ArrayList<Integer> grades;
 
+    public void setName (String name) {
+        this.name = name;
+    }
+
+
+
+
+
+
+
 
 
 
