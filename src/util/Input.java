@@ -28,32 +28,30 @@ public class Input {
     public boolean yesNo(String prompt){
         System.out.println(prompt);
         String input = this.sc.next();
+        sc.nextLine();
         return (input.trim().toLowerCase().equals("y") ||
                 input.trim().toLowerCase().equals("yes"));
     }
 
 
     public int getInt(){
-        System.out.println("Please enter an int.");
-        return this.sc.nextInt();
+        try{
+            return Integer.valueOf(getString());
+        } catch (NumberFormatException e){
+            System.out.println("Please enter an int.");
+            return getInt();
+        }
     }
 
     public int getInt(int min, int max){
         return getInt(min,max,"Please enter an int between "+min+" and "+max);
-//        int input;
-//        do{
-//            System.out.printf("Please enter an int between %d and %d%n", min, max);
-//            input = this.sc.nextInt();
-//        }while(input < min || input > max);
-//
-//        return input;
     }
 
     public int getInt(int min, int max,String prompt){
         int input;
         do{
             System.out.println(prompt);
-            input = this.sc.nextInt();
+            input = Integer.valueOf(getString());
         }while(input < min || input > max);
 
         return input;
@@ -61,25 +59,28 @@ public class Input {
 
     public double getDouble(){
         System.out.println("Please enter a double.");
-        return this.sc.nextDouble();
+        try {
+            return Double.valueOf(getString());
+        } catch(NumberFormatException e) {
+            System.out.println("Input must be a number!");
+            return getDouble();
+        }
     }
 
     public double getDouble(double min, double max){
         return getDouble(min,max,"Please enter a double between "+min+" and "+max);
-//        double input;
-//        do{
-//            System.out.printf("Please enter a double between %.2f and %.2f%n", min, max);
-//            input = this.sc.nextDouble();
-//        }while(input < min || input > max);
-//
-//        return input;
     }
 
     public double getDouble(double min, double max,String prompt){
         double input;
         do{
             System.out.println(prompt);
-            input = this.sc.nextDouble();
+            try{
+                input = Double.valueOf(getString());
+            } catch (Exception e){
+                System.out.println("Must be a double!");
+                return getDouble();
+            }
         }while(input < min || input > max);
 
         return input;
